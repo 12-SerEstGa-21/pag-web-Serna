@@ -1,0 +1,355 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+    margin: 0%;
+    background-color: #0E0F11;
+    color: white
+}
+
+
+/* Globales */
+
+/* color: #D4AF37; */
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* header */
+
+.encabezado {
+    height: 10rem;
+    background-color: black;
+    border-bottom: 1px solid #444141;
+}
+
+.contenido-encabezado {
+    display: flex;
+    align-items: center;
+}
+
+.contenedorImg {
+    width: 50%;
+
+}
+
+.contenedorImg img{
+    height: 10rem;
+}
+
+.navegacion-principal {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 32%;
+}
+
+.navegacion-principal a{
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+
+    transition: transform 0.3s;
+}
+
+.navegacion-principal a:hover {
+    transform: scale(1.02);
+}
+
+.navegacion-principal .inicio {
+    color: #D4AF37;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid #D4AF37;
+}
+
+/* hero */
+
+.hero {
+    background-image: linear-gradient(to left, transparent, #0E0F11 100%), url(./img/fondo-foto.jpg);
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% auto;
+    background-position: left center, right 65%;
+
+    display: flex;
+    align-items: center;
+}
+
+.texto-hero {
+    text-align: left;
+    margin: 0% 5%;
+    color: white;
+}
+
+.cont-texto {
+    width: 38rem;
+}
+
+.cont-texto span {
+    color: #D4AF37;
+}
+
+.foto-video {
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.texto-hero h1{
+    margin: 1rem 0;
+    line-height: 6rem;
+}
+
+.texto-hero p{
+    margin: 0rem;
+    font-size: 90%;
+}
+
+/* Main */
+
+.texto-main {
+    margin: 6rem 0 1rem 0;
+}
+
+.texto-main p {
+    margin-bottom: 0;
+    color: #D4AF37;
+}
+
+.texto-main h2 {
+    margin-top: 1rem;
+}
+
+.contenedor-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 73.5rem;
+}
+
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+
+/**--Esto no lo hice yo--**/
+.mini-cont-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mini-cont-img:hover {
+    background-size: 100% 100%; 
+}
+.mini-cont-img:hover > * {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.mini-cont-img:nth-child(1) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/hombre\ foto.jpg);
+    grid-column: 1 / 4;
+}
+
+.mini-cont-img:nth-child(1):hover {
+    background-image: url(img/foto-paquete.jpg);  
+}
+
+.mini-cont-img:nth-child(2) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/video.avif);
+    grid-column: 4 / 7;
+}
+
+.mini-cont-img:nth-child(2):hover {
+    background-image: url(img/video-paquete.jfif);   
+}
+
+.mini-cont-img:nth-child(3) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/eventooct.jpg);
+    grid-column: 7 / 10;
+}
+
+.mini-cont-img:nth-child(3):hover {
+    background-image: url(img/evento-paquete.jpg);           
+}
+
+.mini-cont-img:nth-child(4) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/boda.webp);
+    grid-column: 10 / 13;
+}
+.mini-cont-img:nth-child(4):hover {
+    background-image: url(img/boda-paquete.jpg);
+}
+
+.mini-cont-img:nth-child(5) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/cumpleaños.jpg);
+    grid-column: 1 / 5;
+}
+.mini-cont-img:nth-child(5):hover {
+    background-image: url(img/cumple-paquete.jpg);
+}
+
+.mini-cont-img:nth-child(6) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/xv\ años.webp);
+    grid-column: 5 / 9;
+}
+.mini-cont-img:nth-child(6):hover {
+    background-image: url(img/XV-paquete.jpg);
+}
+
+.mini-cont-img:nth-child(7) {
+    background-image: linear-gradient(to bottom, transparent, #0E0F11 90%), url(./img/sesion.webp);
+    grid-column: 9 / 13;
+}
+.mini-cont-img:nth-child(7):hover {
+    background-image: url(img/sesion-paquete.jpg);
+}
+
+.mini-cont-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid #949494;
+
+    height: 30rem;
+
+    border-radius: 1.5rem;
+    padding: 1rem;
+    display: flex;
+
+    align-items:end;
+
+    transition: transform 0.3s ease-out;
+}
+
+.mini-cont-img:hover {
+    transform: scale(1.02);
+}
+
+.mini-cont-img img {
+    width: 4rem;
+    height: 4rem;
+    background-color: #4441413b;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+
+.mini-cont-img p {
+    align-self:flex-end;
+    height: fit-content;
+    margin: 0;
+    padding: 0.85rem;
+}
+
+/* Section */
+
+.seccion {
+    background-image: linear-gradient(to left, transparent, #0E0F11 100%), url(./img/montaña.webp);
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% auto;
+    background-position: left center, center;
+
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.texto-seccion {
+    text-align: left;
+    margin: 0% 5%;
+    color: white;
+}
+
+.cont-texto-seccion {
+    width: 38rem;
+}
+
+.seccion-mas {
+    color: #D4AF37;
+}
+
+.texto-seccion h2{
+    margin: 1rem 0;
+    line-height: 6rem;
+}
+
+.texto-seccion p{
+    margin: 0rem;
+    font-size: 90%;
+}
+
+/* footer */
+
+.pie-pagina {
+    background-color: black;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-redes-sociales {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenedor-redes-sociales a img {
+    width: 3rem;
+    align-items: block;
+}
+
+.contenedor-redes-sociales p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenedor-img-redes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.contenedor-pie-lateral {
+    width: 30%;
+}
+
+
+
+

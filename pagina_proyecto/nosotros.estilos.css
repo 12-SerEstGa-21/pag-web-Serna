@@ -1,0 +1,225 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+    margin: 0%;
+    background-color: #0E0F11;
+    color: white;
+}
+
+
+/* Globales */
+
+/* color: #D4AF37; */
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* header */
+
+.encabezado {
+    height: 10rem;
+    background-color: black;
+    border-bottom: 1px solid #444141;
+}
+
+.contenido-encabezado {
+    display: flex;
+    align-items: center;
+}
+
+.contenedorImg {
+    width: 50%;
+
+}
+
+.contenedorImg img{
+    height: 10rem;
+}
+
+.navegacion-principal {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 32%;
+}
+
+.navegacion-principal a{
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+}
+
+.navegacion-principal .inicio {
+    color: #D4AF37;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid #D4AF37;
+}
+
+/* hero */
+
+.hero {
+    background-image: linear-gradient(to left, transparent, #0E0F11 100%), url(./img/background\ uno.jpg);
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% auto;
+    background-position: left center, right 65%;
+
+    display: flex;
+    align-items: center;
+}
+
+.texto-hero {
+    text-align: left;
+    margin: 0% 5%;
+    color: white;
+}
+
+.texto-hero h1, p {
+    margin: 0%;
+}
+
+.texto-hero h1 {
+    height: 9rem;
+    color: #D4AF37;
+}
+
+/* Main */
+
+.contenedor-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 73.5rem;
+}
+
+.contenedor-texto{
+    padding: 5rem 8rem 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-nuestra-escencia p {
+    line-height: 2;
+}
+
+.escencia {
+    color: #D4AF37;
+}
+
+.contenedor-iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.icono {
+    width: 5rem;
+    padding: 1rem 0;
+}
+
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 5rem;
+    height: 40rem;
+    padding: 5rem 0rem 5rem 0;
+}
+
+.img-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-left img {
+    border-radius: 3%;
+}
+
+.img-right {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    
+}
+
+.img-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/* footer */
+
+.pie-pagina {
+    background-color: black;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-redes-sociales {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenedor-redes-sociales a img {
+    width: 3rem;
+    align-items: block;
+}
+
+.contenedor-redes-sociales p {
+    font-size: 1.6rem;
+}
+
+.contenedor-img-redes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+
+}
+
+.contenedor-pie-lateral {
+    width: 30%;
+}
+
+
+
+
